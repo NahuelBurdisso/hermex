@@ -12,5 +12,6 @@ export const loader: LoaderFunction = async ({ request }) => {
   return await authenticator.isAuthenticated(request, {
     successRedirect: "/cashier-home",
     failureRedirect: "/auth/sign-up",
+    
   });
 };
